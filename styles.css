@@ -1,0 +1,38 @@
+#questionBox {
+    background-color: lightgrey;
+    padding: 10px 0;
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.question-row{
+    display: flex;
+}
+
+.questionText{
+    padding: 10px;
+    font: 28px 'Arial';
+}
+
+body {
+    /* font: 14px 'Arial'; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+}
+
+input {
+    /* flex-grow: 1; */
+    font-size: 28px;
+    width: 100px;
+}
