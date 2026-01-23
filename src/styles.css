@@ -1,9 +1,12 @@
 #content {
+    font: 14px 'Arial'; 
     display: flex;
-    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-#questionBox {
+#question-box {
     background-color: lightgrey;
     padding: 10px 0;
 
@@ -24,13 +27,6 @@
     font: 28px 'Arial';
 }
 
-body {
-    /* font: 14px 'Arial'; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
 form{
     display: flex;
@@ -40,4 +36,32 @@ input {
     /* flex-grow: 1; */
     font-size: 28px;
     width: 100px;
+}
+
+#roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.roadmap-button {
+    border: none;
+    background: none;
+
+    background-color: lightgrey;
+    /* Modern blue */
+    color: black;
+    /* padding-bottom: 20px; */
+    /* padding-top: 20px; */
+
+    padding: 12px 24px;
+    /* Big click area */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+
+.roadmap-button:hover {
+    background-color: grey;
 }
