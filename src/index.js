@@ -1,5 +1,11 @@
+import "./styles.css"
+import loadOutsGame from "./outs.js"
+
+
 //have a queue that holds the question objects 
 //pop each time we answer a question
+
+loadOutsGame();
 
 const qobj1 = {villain: "8J", hero: "KA", board: "5QKA", answer: "4"};
 const qobj2 = {villain: "AJ", hero: "33", board: "J82A", answer: "2"};

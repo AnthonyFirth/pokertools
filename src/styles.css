@@ -1,3 +1,8 @@
+#content {
+    display: flex;
+    flex-grow: 1;
+}
+
 #questionBox {
     background-color: lightgrey;
     padding: 10px 0;
@@ -14,7 +19,7 @@
     display: flex;
 }
 
-.questionText{
+.question-text{
     padding: 10px;
     font: 28px 'Arial';
 }
