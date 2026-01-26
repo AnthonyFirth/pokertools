@@ -1,12 +1,9 @@
+import questions from "./questions.json" 
+
 export default function loadOutsGame(){ 
 
-    //create questions
-    const qobj1 = { villain: "8J", hero: "KA", board: "5QKA", answer: "4" };
-    const qobj2 = { villain: "AJ", hero: "33", board: "J82A", answer: "2" };
-    const qobj3 = { hero: "K9", villain: "JJ", board: "486A", answer: "3" };
-
     //queue pops every time we answer a question
-    const queue = [qobj1, qobj2, qobj3];
+    const queue = [... questions];
 
 
     //manipulating DOM
