@@ -48,10 +48,13 @@ export default function loadOutsGame(){
 
 
     //game logic
-    function updateCards(qobj) {
-        villainHand.textContent = "Villain: " + qobj.villain;
-        heroHand.textContent = "Hero: " + qobj.hero;
-        boardCards.textContent = "Board: " + qobj.board;
+    function updateCards(qobj) { //textbased
+        const suitSymbols = { "spade": "♠", "club": "♣", "diamond": "♦", "heart": "♥"};
+
+        heroHand.textContent = "Hero: " + qobj.hero.map(c => c.rank + suitSymbols[c.suit]).join('');
+
+        villainHand.textContent = "Villain: " + qobj.villain.map(c => c.rank + suitSymbols[c.suit]).join('');
+        boardCards.textContent = "Board: " + qobj.board.map(c => c.rank + suitSymbols[c.suit]).join('');
     }
 
     answerBox.addEventListener("input", () => {

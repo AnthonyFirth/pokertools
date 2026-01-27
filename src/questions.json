@@ -1,5 +1,53 @@
 [
-  { "villain": "8J", "hero": "KA", "board": "5QKA", "answer": "4" },
-  { "villain": "AJ", "hero": "33", "board": "J82A", "answer": "2" },
-  { "hero": "K9", "villain": "JJ", "board": "486A", "answer": "3" }
+  {
+    "hero": [
+      { "rank": "8", "suit": "diamond" },
+      { "rank": "J", "suit": "heart" }
+    ],
+    "villain": [
+      { "rank": "K", "suit": "diamond" },
+      { "rank": "A", "suit": "diamond" }
+    ],
+    "board": [
+      { "rank": "5", "suit": "club" },
+      { "rank": "Q", "suit": "diamond" },
+      { "rank": "K", "suit": "heart" },
+      { "rank": "A", "suit": "heart" }
+    ],
+    "answer": "4"
+  },
+  {
+    "hero": [
+      { "rank": "3", "suit": "club" },
+      { "rank": "3", "suit": "diamond" }
+    ],
+    "villain": [
+      { "rank": "A", "suit": "club" },
+      { "rank": "J", "suit": "club" }
+    ],
+    "board": [
+      { "rank": "J", "suit": "diamond" },
+      { "rank": "8", "suit": "diamond" },
+      { "rank": "2", "suit": "heart" },
+      { "rank": "A", "suit": "spade" }
+    ],
+    "answer": "2"
+  },
+  {
+    "hero": [
+      { "rank": "K", "suit": "spade" },
+      { "rank": "9", "suit": "spade" }
+    ],
+    "villain": [
+      { "rank": "J", "suit": "spade" },
+      { "rank": "J", "suit": "heart" }
+    ],
+    "board": [
+      { "rank": "4", "suit": "heart" },
+      { "rank": "8", "suit": "heart" },
+      { "rank": "6", "suit": "diamond" },
+      { "rank": "A", "suit": "club" }
+    ],
+    "answer": "3"
+  }
 ]
