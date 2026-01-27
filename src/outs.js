@@ -34,13 +34,12 @@ export default function loadOutsGame(){
     answerBox.id = "answerBox";
 
     form.appendChild(answerBox);
-
-
-    questionBox.appendChild(questionRow);
+    
     questionRow.appendChild(heroHand);
     questionRow.appendChild(villainHand);
     questionRow.appendChild(boardCards);
 
+    questionBox.appendChild(questionRow);
     questionBox.appendChild(form);
 
     content.appendChild(questionBox);
@@ -48,13 +47,35 @@ export default function loadOutsGame(){
 
 
     //game logic
+    const suitSymbols = { "spade": "♠", "club": "♣", "diamond": "♦", "heart": "♥" };
+
+    function cardText(cards){
+        //within each herohand / villainhand etc we need to create a series of spans 
+        //then colour the spans according to the suit
+        const spans = []
+        for (const card of cards){
+            const rankSpan = document.createElement("span");
+            rankSpan.textContent = card.rank;
+
+            const suitSpan = document.createElement("span");
+            suitSpan.textContent = suitSymbols[card.suit];
+            
+            suitSpan.style.color = (card.suit == "spade" || card.suit == "club") ? "black" : "red";
+
+            spans.push(rankSpan, suitSpan);
+        }
+        return spans;
+    }
+
     function updateCards(qobj) { //textbased
-        const suitSymbols = { "spade": "♠", "club": "♣", "diamond": "♦", "heart": "♥"};
+        heroHand.textContent = "Hero: ";
+        cardText(qobj.hero).forEach((e) => heroHand.appendChild(e));
 
-        heroHand.textContent = "Hero: " + qobj.hero.map(c => c.rank + suitSymbols[c.suit]).join('');
+        villainHand.textContent = "Villain: ";
+        cardText(qobj.villain).forEach(e => villainHand.appendChild(e));
 
-        villainHand.textContent = "Villain: " + qobj.villain.map(c => c.rank + suitSymbols[c.suit]).join('');
-        boardCards.textContent = "Board: " + qobj.board.map(c => c.rank + suitSymbols[c.suit]).join('');
+        boardCards.textContent = "Board: ";
+        cardText(qobj.board).forEach(e => boardCards.appendChild(e));
     }
 
     answerBox.addEventListener("input", () => {

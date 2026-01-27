@@ -6,11 +6,11 @@ const content = document.getElementById("content");
 const practice = document.getElementById("practice");
 const logo = document.getElementById("logo");
 
-practice.addEventListener("click", () => {
-    content.innerHTML = "";
+// practice.addEventListener("click", () => {
+//     content.innerHTML = "";
 
-    loadOutsGame();
-})
+//     loadOutsGame();
+// })
 
 
 logo.addEventListener("click", () => {
