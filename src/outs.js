@@ -3,7 +3,7 @@ import questions from "./questions.json"
 export default function loadOutsGame(){ 
 
     //queue pops every time we answer a question
-    const queue = [... questions];
+    const queue = [... questions].reverse();
 
 
     //manipulating DOM
@@ -12,8 +12,11 @@ export default function loadOutsGame(){
     const questionBox = document.createElement("div");
     questionBox.id = "question-box";
 
-    const questionRow = document.createElement("div");
-    questionRow.className = "question-row";
+    const handsRow = document.createElement("div");
+    handsRow.className = "question-row";
+
+    const boardRow = document.createElement("div");
+    boardRow.className = "question-row";
 
     const heroHand = document.createElement("span");
     heroHand.id = "hero-hand";
@@ -35,11 +38,13 @@ export default function loadOutsGame(){
 
     form.appendChild(answerBox);
     
-    questionRow.appendChild(heroHand);
-    questionRow.appendChild(villainHand);
-    questionRow.appendChild(boardCards);
+    handsRow.appendChild(heroHand);
+    handsRow.appendChild(villainHand);
 
-    questionBox.appendChild(questionRow);
+    boardRow.appendChild(boardCards);
+
+    questionBox.appendChild(handsRow);
+    questionBox.appendChild(boardRow);
     questionBox.appendChild(form);
 
     content.appendChild(questionBox);

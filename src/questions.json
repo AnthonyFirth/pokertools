@@ -49,5 +49,210 @@
       { "rank": "A", "suit": "club" }
     ],
     "answer": "3"
+  },
+  {
+    "hero": [
+      {
+        "rank": "5",
+        "suit": "club"
+      },
+      {
+        "rank": "7",
+        "suit": "club"
+      }
+    ],
+    "villain": [
+      {
+        "rank": "K",
+        "suit": "diamond"
+      },
+      {
+        "rank": "J",
+        "suit": "diamond"
+      }
+    ],
+    "board": [
+      {
+        "rank": "J",
+        "suit": "heart"
+      },
+      {
+        "rank": "6",
+        "suit": "heart"
+      },
+      {
+        "rank": "9",
+        "suit": "heart"
+      },
+      {
+        "rank": "2",
+        "suit": "diamond"
+      }
+    ],
+    "answer": "4"
+  },
+  {
+    "hero": [
+      {
+        "rank": "A",
+        "suit": "diamond"
+      },
+      {
+        "rank": "J",
+        "suit": "spade"
+      }
+    ],
+    "villain": [
+      {
+        "rank": "7",
+        "suit": "spade"
+      },
+      {
+        "rank": "8",
+        "suit": "spade"
+      }
+    ],
+    "board": [
+      {
+        "rank": "7",
+        "suit": "heart"
+      },
+      {
+        "rank": "5",
+        "suit": "heart"
+      },
+      {
+        "rank": "2",
+        "suit": "club"
+      },
+      {
+        "rank": "4",
+        "suit": "club"
+      }
+    ],
+    "answer": "10"
+  },
+  {
+    "hero": [
+      {
+        "rank": "7",
+        "suit": "club"
+      },
+      {
+        "rank": "6",
+        "suit": "club"
+      }
+    ],
+    "villain": [
+      {
+        "rank": "A",
+        "suit": "club"
+      },
+      {
+        "rank": "Q",
+        "suit": "club"
+      }
+    ],
+    "board": [
+      {
+        "rank": "Q",
+        "suit": "spade"
+      },
+      {
+        "rank": "8",
+        "suit": "heart"
+      },
+      {
+        "rank": "7",
+        "suit": "diamond"
+      },
+      {
+        "rank": "K",
+        "suit": "club"
+      }
+    ],
+    "answer": "5"
+  },
+  {
+    "hero": [
+      {
+        "rank": "6",
+        "suit": "heart"
+      },
+      {
+        "rank": "7",
+        "suit": "spade"
+      }
+    ],
+    "villain": [
+      {
+        "rank": "A",
+        "suit": "spade"
+      },
+      {
+        "rank": "Q",
+        "suit": "spade"
+      }
+    ],
+    "board": [
+      {
+        "rank": "4",
+        "suit": "spade"
+      },
+      {
+        "rank": "7",
+        "suit": "diamond"
+      },
+      {
+        "rank": "Q",
+        "suit": "diamond"
+      },
+      {
+        "rank": "2",
+        "suit": "spade"
+      }
+    ],
+    "answer": "4"
+  },
+  {
+    "hero": [
+      {
+        "rank": "5",
+        "suit": "heart"
+      },
+      {
+        "rank": "6",
+        "suit": "heart"
+      }
+    ],
+    "villain": [
+      {
+        "rank": "A",
+        "suit": "heart"
+      },
+      {
+        "rank": "J",
+        "suit": "heart"
+      }
+    ],
+    "board": [
+      {
+        "rank": "8",
+        "suit": "diamond"
+      },
+      {
+        "rank": "9",
+        "suit": "diamond"
+      },
+      {
+        "rank": "2",
+        "suit": "heart"
+      },
+      {
+        "rank": "K",
+        "suit": "heart"
+      }
+    ],
+    "answer": "9"
   }
 ]
