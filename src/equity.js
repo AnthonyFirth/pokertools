@@ -1,12 +1,8 @@
-import questions from "./outs-questions.json" 
+import questions from "./equity-questions.json"
 
-export default function loadOutsGame(){ 
-    // how to go back and make it good:
-    // add an I give up button
-    // worked examples -> practice basics with the table -> composite scenarios 
-    // then we could create an endless practice scenario if we figured out how to generate hands
-    //queue pops every time we answer a question
-    const queue = [... questions].reverse();
+export default function loadEquityGame() {
+
+    const queue = [...questions].reverse();
 
 
     //manipulating DOM
@@ -33,20 +29,15 @@ export default function loadOutsGame(){
     boardCards.id = "board-cards";
     boardCards.className = "question-text";
 
-    
+
     const form = document.createElement("form");
-    const prompt = document.createElement("span");
-    prompt.classList.add("question-text");
     const answerBox = document.createElement("input");
-    
-    prompt.textContent = "Hero's outs:";
-    
     answerBox.type = "text";
     answerBox.id = "answerBox";
-
-    // form.appendChild(prompt);
-    form.appendChild(answerBox);
     
+
+    form.appendChild(answerBox);
+
     handsRow.appendChild(heroHand);
     handsRow.appendChild(villainHand);
 
@@ -58,23 +49,22 @@ export default function loadOutsGame(){
 
     content.appendChild(questionBox);
     answerBox.focus();
-
-
+    
 
     //game logic
     const suitSymbols = { "spade": "♠", "club": "♣", "diamond": "♦", "heart": "♥" };
 
-    function cardText(cards){
+    function cardText(cards) {
         //within each herohand / villainhand etc we need to create a series of spans 
         //then colour the spans according to the suit
         const spans = []
-        for (const card of cards){
+        for (const card of cards) {
             const rankSpan = document.createElement("span");
             rankSpan.textContent = card.rank;
 
             const suitSpan = document.createElement("span");
             suitSpan.textContent = suitSymbols[card.suit];
-            
+
             suitSpan.style.color = (card.suit == "spade" || card.suit == "club") ? "black" : "red";
 
             spans.push(rankSpan, suitSpan);

@@ -97,6 +97,7 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: column;
+    font: 14px 'Arial';
 }
 
 .darken {
@@ -119,6 +120,10 @@ body {
 
 .panel.open {
     transform: translateX(0);
+}
+
+.panel.close {
+    transform: translateX(100%);
 }
 
 .practice-button {

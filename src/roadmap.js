@@ -1,4 +1,5 @@
 import loadOutsGame from "./outs.js"
+import loadEquityGame from "./equity.js"
 
 export default function loadRoadmap(){
     //basically the roadmap
@@ -29,6 +30,13 @@ export default function loadRoadmap(){
     const arrow = document.createElement("div");
     arrow.className = "arrow";
 
+    const potOdds = document.createElement("button");
+    potOdds.textContent = "Pot odds";
+    potOdds.className = "roadmap-button";
+
+    const arrowPotOdds = document.createElement("div");
+    arrowPotOdds.className = "arrow";
+
 
     function openPanel(title, description, onPractice){
         panel.innerHTML = "";
@@ -58,7 +66,8 @@ export default function loadRoadmap(){
         panel.appendChild(practiceBtn);
     }
 
-    outs.addEventListener("click", () => {
+    outs.addEventListener("click", (e) => {
+        e.stopPropagation();
         // content.innerHTML = "";
         let description = `
         An out is a card that could come in the future, which would give you the winning hand. 
@@ -68,11 +77,38 @@ export default function loadRoadmap(){
         // loadOutsGame();
     })
 
+    equity.addEventListener("click", (e) => {
+        e.stopPropagation();
+        let description = `
+        Equity is the % at which we can expect to win a hand (if we go to showdown). If we are on the flop (thus going to see the turn and river) we can multiply 
+        our outs by 4. If we are on the turn (and hence will see the river) then we multiply the number of outs by 2. 
+        `
+
+        openPanel("Estimating equity", description, loadEquityGame);
+    })
+
+    potOdds.addEventListener("click", (e) => {
+        e.stopPropagation();
+        let description = `
+        Pot odds is basically determining the EV of a call based on the size of the pot. 
+        `
+    })
+
+    content.addEventListener("click", () => {
+        if (panel.classList.contains("open")){
+            panel.classList.remove("open");
+            content.classList.remove("darken");
+        } 
+        
+    })
     
 
     roadmap.appendChild(outs);
     roadmap.appendChild(arrow);
     roadmap.appendChild(equity);
+    roadmap.appendChild(arrowPotOdds);
+    roadmap.appendChild(potOdds);
+    
 
     content.appendChild(roadmap);
     
