@@ -1,5 +1,8 @@
 import loadOutsGame from "./outs.js"
 import loadEquityGame from "./equity.js"
+import katex from "katex";
+import "katex/dist/katex.min.css";
+import renderMathInElement from "katex/dist/contrib/auto-render";
 
 export default function loadRoadmap(){
     //basically the roadmap
@@ -45,7 +48,7 @@ export default function loadRoadmap(){
         heading.textContent = title;
 
         const desc = document.createElement("p");
-        desc.textContent = description;
+        desc.innerHTML = description;
 
         const practiceBtn = document.createElement("button");
         practiceBtn.textContent = "Practice";
@@ -61,9 +64,13 @@ export default function loadRoadmap(){
         content.classList.add("darken");
         panel.classList.add("open");
 
+
         panel.appendChild(heading);
         panel.appendChild(desc);
         panel.appendChild(practiceBtn);
+        renderMathInElement(desc);
+
+        
     }
 
     outs.addEventListener("click", (e) => {
@@ -90,8 +97,24 @@ export default function loadRoadmap(){
     potOdds.addEventListener("click", (e) => {
         e.stopPropagation();
         let description = `
-        Pot odds is basically determining the EV of a call based on the size of the pot. 
+        Pot odds tells you whether you should call, depending on your equity and the size of the pot. 
+        Ideally we call whenever E[call] > 0, from this we can derive the required equity to call.
+
+        \\[ 
+        E[call] > 0 \\\\
+        E[win] + E[lose] > 0 \\\\
+        P(w)(pot) - P(l) (call) > 0 \\\\
+        \\vdots \\\\
+        P(w) > \\frac{call}{pot + call} 
+        \\]
+
+        We know from the previous section that the probability of winning is our equity! So our equity just has to be 
+        greater than this fraction. 
         `
+
+        //hmm
+
+        openPanel("Pot Odds", description, loadEquityGame);
     })
 
     content.addEventListener("click", () => {
