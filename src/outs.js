@@ -3,9 +3,13 @@ import questions from "./outs-questions.json"
 export default function loadOutsGame(){ 
     // how to go back and make it good:
     // add an I give up button
-    // worked examples -> practice basics with the table -> composite scenarios 
+    // worked examples -> practice basics with the table -> composite scenarios
     // then we could create an endless practice scenario if we figured out how to generate hands
     //queue pops every time we answer a question
+
+    //https://github.com/goldfire/pokersolver/tree/master 
+    //can use to create endless mode
+
     const queue = [... questions].reverse();
 
 

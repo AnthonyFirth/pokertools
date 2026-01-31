@@ -43,8 +43,26 @@ export default function loadPotoddsGame() {
     const form = document.createElement("form");
     const answerBox = document.createElement("input");
     answerBox.type = "text";
-    answerBox.id = "answerBox";
+    answerBox.id = "answerBox"; //change to buttons here
 
+    const answerRow = document.createElement("div");
+    answerRow.className = "question-row";
+    answerRow.style.gap = "20px";
+
+    const callButton = document.createElement("button");
+    callButton.textContent = "call";
+    callButton.className = "answer-button call-button";
+
+    const foldButton = document.createElement("button");
+    foldButton.textContent = "fold";
+    foldButton.className = "answer-button fold-button";
+
+    answerRow.appendChild(callButton);
+    answerRow.appendChild(foldButton);
+
+    const hint = document.createElement("div");
+    hint.className = "keyboard-hint";
+    hint.textContent = "press C to call, F to fold";
 
     form.appendChild(answerBox);
 
@@ -58,10 +76,13 @@ export default function loadPotoddsGame() {
     questionBox.appendChild(handsRow);
     questionBox.appendChild(boardRow);
     questionBox.appendChild(promptRow);
-    questionBox.appendChild(form);
+    questionBox.appendChild(answerRow);
+    
 
     content.appendChild(questionBox);
-    answerBox.focus();
+    content.appendChild(hint);
+
+    setTimeout(() => hint.classList.add("fade-out"), 3000);
 
 
     //game logic
@@ -98,19 +119,43 @@ export default function loadPotoddsGame() {
         promptText.textContent = qobj.prompt;
     }
 
-    answerBox.addEventListener("input", () => {
+    // answerBox.addEventListener("input", () => {
+    //     if (queue.length == 0) return;
+
+    //     if (answerBox.value == queue.at(-1).answer) {
+    //         //go to next question and update cards
+
+    //         answerBox.value = "";
+    //         queue.pop();
+
+    //         if (queue.length > 0) updateCards(queue.at(-1));
+    //         else alert("yay! you finished all questions")
+    //     }
+    // })
+
+    callButton.addEventListener("click", () => {
+        onAnswer("call");
+    })
+
+    foldButton.addEventListener("click", () => {
+        onAnswer("fold");
+    })
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key == "c") onAnswer("call");
+        if (e.key == "f") onAnswer("fold");
+    })
+
+    function onAnswer(ans){
         if (queue.length == 0) return;
 
-        if (answerBox.value == queue.at(-1).answer) {
-            //go to next question and update cards
-
-            answerBox.value = "";
+        if (ans == queue.at(-1).answer){
             queue.pop();
 
             if (queue.length > 0) updateCards(queue.at(-1));
-            else alert("yay! you finished all questions")
+            else alert("yay! you finished all questions");
         }
-    })
+    }
 
     updateCards(queue.at(-1));
 }
