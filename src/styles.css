@@ -29,6 +29,9 @@
     font: 28px 'Arial';
 }
 
+.question-prompt {
+    padding-top: 10px;
+}
 
 form{
     display: flex;
@@ -124,6 +127,22 @@ body {
 
 .panel.close {
     transform: translateX(100%);
+}
+
+.panel table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+.panel th, .panel td {
+    border: 1px solid #555;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.panel th {
+    background: #3a3a3a;
 }
 
 .practice-button {

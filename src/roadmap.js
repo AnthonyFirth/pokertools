@@ -1,5 +1,7 @@
 import loadOutsGame from "./outs.js"
 import loadEquityGame from "./equity.js"
+import loadPotoddsGame from "./potodds.js"
+
 import katex from "katex";
 import "katex/dist/katex.min.css";
 import renderMathInElement from "katex/dist/contrib/auto-render";
@@ -108,13 +110,24 @@ export default function loadRoadmap(){
         P(w) > \\frac{call}{pot + call} 
         \\]
 
-        We know from the previous section that the probability of winning is our equity! So our equity just has to be 
-        greater than this fraction. 
+        We know from the previous section that the probability of winning is our equity! So our equity just has to be
+        greater than this fraction.
+        <br> <br>
+        If we memorize this table we can do the calculation even faster. 
+
+        <table>
+            <tr><th>Call</th><th>Required equity</th></tr>
+            <tr><td>2x the size of the pot</td><td>40%</td></tr>
+            <tr><td>Pot-size</td><td>33%</td></tr>
+            <tr><td>2/3 the size of the pot</td><td>28%</td></tr>
+            <tr><td>1/2 the size of the pot</td><td>25%</td></tr>
+            <tr><td>1/3 the size of the pot</td><td>20%</td></tr>
+            <tr><td>1/4 the size of the pot</td><td>16%</td></tr>
+        </table>
         `
 
-        //hmm
 
-        openPanel("Pot Odds", description, loadEquityGame);
+        openPanel("Pot Odds", description, loadPotoddsGame); //fix this and actually create pot odds game...
     })
 
     content.addEventListener("click", () => {

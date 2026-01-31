@@ -1,0 +1,45 @@
+[
+    {
+        "hero": [
+            {
+                "rank": "8",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "club"
+            },
+            {
+                "rank": "J",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "7",
+                "suit": "diamond"
+            },
+            {
+                "rank": "8",
+                "suit": "diamond"
+            },
+            {
+                "rank": "2",
+                "suit": "spade"
+            },
+            {
+                "rank": "A",
+                "suit": "spade"
+            }
+        ],
+        "prompt": "Pot was $10 and villain goes all-in for $5",
+        "answer": "fold",
+        "comment": "With 5 outs, we can estimate our equity at 10%. Getting 3:1 we need 25% equity. Fold"
+    }
+]
