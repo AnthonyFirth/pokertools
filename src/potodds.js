@@ -57,12 +57,21 @@ export default function loadPotoddsGame() {
     foldButton.textContent = "fold";
     foldButton.className = "answer-button fold-button";
 
+    const panel = document.createElement("div");
+    panel.className = "panel";
+    panel.classList.add("ingame");
+
+    const panelTab = document.createElement("div");
+    panelTab.className = "panel-tab";
+    panelTab.textContent = "◀";
+    panelTab.addEventListener("click", () => togglePanel());
+
     answerRow.appendChild(callButton);
     answerRow.appendChild(foldButton);
 
     const hint = document.createElement("div");
     hint.className = "keyboard-hint";
-    hint.textContent = "press C to call, F to fold";
+    hint.textContent = "press C to call, F to fold, P to open panel";
 
     form.appendChild(answerBox);
 
@@ -81,6 +90,8 @@ export default function loadPotoddsGame() {
 
     content.appendChild(questionBox);
     content.appendChild(hint);
+    content.appendChild(panelTab);
+    content.appendChild(panel);
 
     setTimeout(() => hint.classList.add("fade-out"), 3000);
 
@@ -144,6 +155,8 @@ export default function loadPotoddsGame() {
     document.addEventListener("keydown", (e) => {
         if (e.key == "c") onAnswer("call");
         if (e.key == "f") onAnswer("fold");
+        if (e.key == "p") togglePanel();
+        
     })
 
     function onAnswer(ans){
@@ -156,6 +169,33 @@ export default function loadPotoddsGame() {
             else alert("yay! you finished all questions");
         }
     }
+
+    function togglePanel(){
+        if (panel.classList.contains("open")){
+            panel.classList.remove("open");
+            panelTab.classList.remove("open");
+            panelTab.textContent = "◀";
+        } else {
+            panel.innerHTML = "";
+
+            const desc = document.createElement("p");
+            desc.innerHTML = `<table>
+            <tr><th>Call</th><th>Required equity</th></tr>
+            <tr><td>2x the size of the pot</td><td>40%</td></tr>
+            <tr><td>Pot-size</td><td>33%</td></tr>
+            <tr><td>2/3 the size of the pot</td><td>28%</td></tr>
+            <tr><td>1/2 the size of the pot</td><td>25%</td></tr>
+            <tr><td>1/3 the size of the pot</td><td>20%</td></tr>
+            <tr><td>1/4 the size of the pot</td><td>16%</td></tr>
+            </table>`
+            panel.appendChild(desc);
+
+            panel.classList.add("open");
+            panelTab.classList.add("open");
+            panelTab.textContent = "▶";
+        }
+    }
+
 
     updateCards(queue.at(-1));
 }

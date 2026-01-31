@@ -41,5 +41,127 @@
         "prompt": "Pot was $10 and villain goes all-in for $5",
         "answer": "fold",
         "comment": "With 5 outs, we can estimate our equity at 10%. Getting 3:1 we need 25% equity. Fold"
+    },
+    {
+        
+        "hero": [
+            {
+                "rank": "5",
+                "suit": "heart"
+            },
+            {
+                "rank": "6",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "club"
+            },
+            {
+                "rank": "A",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "7",
+                "suit": "diamond"
+            },
+            {
+                "rank": "8",
+                "suit": "diamond"
+            },
+            {
+                "rank": "J",
+                "suit": "spade"
+            }
+        ],
+        "prompt": "Pot was $24. Villain goes all-in for $28",
+        "answer": "fold",
+        "comment": "Hero has 8 outs for 32% equity. He's getting a little worse than 2:1 so he needs to have about 35% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "A",
+                "suit": "club"
+            },
+            {
+                "rank": "Q",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "J",
+                "suit": "diamond"
+            },
+            {
+                "rank": "J",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "3",
+                "suit": "spade"
+            },
+            {
+                "rank": "5",
+                "suit": "club"
+            },
+            {
+                "rank": "5",
+                "suit": "diamond"
+            }
+        ],
+        "prompt": "Pot was $10. Villain goes all-in for $6.50.",
+        "answer": "fold",
+        "comment": "With 6 outs, we have about 24% equity. Villain bet about 2/3 pot, so we need to have about 28% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "9",
+                "suit": "diamond"
+            },
+            {
+                "rank": "6",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "J",
+                "suit": "diamond"
+            },
+            {
+                "rank": "J",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "3",
+                "suit": "spade"
+            },
+            {
+                "rank": "5",
+                "suit": "club"
+            },
+            {
+                "rank": "5",
+                "suit": "diamond"
+            },
+            {
+                "rank": "2",
+                "suit": "diamond"
+            }
+        ],
+        "prompt": "Pot was $20. Villain goes all-in for $10.",
+        "answer": "fold",
+        "comment": "With 11 outs, we have about 22% equity. Villain bet 1/2 pot, so we need to have about 25% equity. Fold."
     }
 ]
