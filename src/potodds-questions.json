@@ -163,5 +163,497 @@
         "prompt": "Pot was $20. Villain goes all-in for $10.",
         "answer": "fold",
         "comment": "With 11 outs, we have about 22% equity. Villain bet 1/2 pot, so we need to have about 25% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "T",
+                "suit": "spade"
+            },
+            {
+                "rank": "9",
+                "suit": "spade"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "K",
+                "suit": "heart"
+            },
+            {
+                "rank": "Q",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "2",
+                "suit": "spade"
+            },
+            {
+                "rank": "6",
+                "suit": "spade"
+            },
+            {
+                "rank": "J",
+                "suit": "club"
+            }
+        ],
+        "prompt": "Pot was $12. Villain goes all-in for $8.",
+        "answer": "call",
+        "comment": "Hero has a flush draw with 9 outs for 36% equity on the flop. Getting about 2.5:1 we need about 29% equity. Call."
+    },
+    {
+        "hero": [
+            {
+                "rank": "9",
+                "suit": "heart"
+            },
+            {
+                "rank": "T",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "spade"
+            },
+            {
+                "rank": "K",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "K",
+                "suit": "spade"
+            },
+            {
+                "rank": "6",
+                "suit": "diamond"
+            },
+            {
+                "rank": "3",
+                "suit": "heart"
+            },
+            {
+                "rank": "7",
+                "suit": "club"
+            }
+        ],
+        "prompt": "Pot was $15. Villain goes all-in for $10.",
+        "answer": "fold",
+        "comment": "Hero has a gutshot with 4 outs for 8% equity on the turn. Getting 2.5:1 we need about 29% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "6",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "diamond"
+            },
+            {
+                "rank": "K",
+                "suit": "spade"
+            }
+        ],
+        "board": [
+            {
+                "rank": "5",
+                "suit": "spade"
+            },
+            {
+                "rank": "8",
+                "suit": "diamond"
+            },
+            {
+                "rank": "K",
+                "suit": "diamond"
+            },
+            {
+                "rank": "2",
+                "suit": "club"
+            }
+        ],
+        "prompt": "Pot was $50. Villain goes all-in for $10.",
+        "answer": "call",
+        "comment": "Hero has an open-ended straight draw with 8 outs for 16% equity on the turn. Getting 6:1 we only need about 14% equity. Call."
+    },
+    {
+        "hero": [
+            {
+                "rank": "A",
+                "suit": "heart"
+            },
+            {
+                "rank": "Q",
+                "suit": "spade"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "9",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "diamond"
+            }
+        ],
+        "board": [
+            {
+                "rank": "3",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "spade"
+            },
+            {
+                "rank": "T",
+                "suit": "diamond"
+            },
+            {
+                "rank": "5",
+                "suit": "heart"
+            }
+        ],
+        "prompt": "Pot was $18. Villain goes all-in for $14.",
+        "answer": "fold",
+        "comment": "Hero has 6 outs (3 aces + 3 queens) for 12% equity on the turn. Getting about 2.3:1 we need about 30% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "K",
+                "suit": "diamond"
+            },
+            {
+                "rank": "4",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "Q",
+                "suit": "spade"
+            },
+            {
+                "rank": "Q",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "7",
+                "suit": "diamond"
+            },
+            {
+                "rank": "J",
+                "suit": "diamond"
+            },
+            {
+                "rank": "2",
+                "suit": "club"
+            },
+            {
+                "rank": "8",
+                "suit": "spade"
+            }
+        ],
+        "prompt": "Pot was $40. Villain goes all-in for $10.",
+        "answer": "call",
+        "comment": "Hero has a flush draw with 9 outs for 18% equity on the turn. Getting 5:1 we only need about 17% equity. Call."
+    },
+    {
+        "hero": [
+            {
+                "rank": "J",
+                "suit": "heart"
+            },
+            {
+                "rank": "8",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "club"
+            },
+            {
+                "rank": "K",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "4",
+                "suit": "heart"
+            },
+            {
+                "rank": "T",
+                "suit": "heart"
+            },
+            {
+                "rank": "K",
+                "suit": "diamond"
+            },
+            {
+                "rank": "3",
+                "suit": "spade"
+            }
+        ],
+        "prompt": "Pot was $16. Villain goes all-in for $16.",
+        "answer": "fold",
+        "comment": "Hero has a flush draw with 9 outs for 18% equity on the turn. Getting 2:1 we need 33% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "J",
+                "suit": "club"
+            },
+            {
+                "rank": "T",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "spade"
+            },
+            {
+                "rank": "A",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "9",
+                "suit": "club"
+            },
+            {
+                "rank": "8",
+                "suit": "spade"
+            },
+            {
+                "rank": "2",
+                "suit": "diamond"
+            }
+        ],
+        "prompt": "Pot was $30. Villain goes all-in for $15.",
+        "answer": "call",
+        "comment": "Hero has an open-ended straight draw with 8 outs for 32% equity on the flop. Getting 3:1 we need 25% equity. Call."
+    },
+    {
+        "hero": [
+            {
+                "rank": "5",
+                "suit": "diamond"
+            },
+            {
+                "rank": "3",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "K",
+                "suit": "spade"
+            },
+            {
+                "rank": "K",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "2",
+                "suit": "club"
+            },
+            {
+                "rank": "6",
+                "suit": "spade"
+            },
+            {
+                "rank": "J",
+                "suit": "diamond"
+            }
+        ],
+        "prompt": "Pot was $8. Villain goes all-in for $8.",
+        "answer": "fold",
+        "comment": "Hero has a gutshot with 4 outs for 16% equity on the flop. Getting 2:1 we need 33% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "3",
+                "suit": "diamond"
+            },
+            {
+                "rank": "7",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "J",
+                "suit": "club"
+            },
+            {
+                "rank": "J",
+                "suit": "spade"
+            }
+        ],
+        "board": [
+            {
+                "rank": "A",
+                "suit": "diamond"
+            },
+            {
+                "rank": "9",
+                "suit": "diamond"
+            },
+            {
+                "rank": "K",
+                "suit": "club"
+            }
+        ],
+        "prompt": "Pot was $6. Villain goes all-in for $12.",
+        "answer": "fold",
+        "comment": "Hero has a flush draw with 9 outs for 36% equity on the flop. Getting 1.5:1 we need 40% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "A",
+                "suit": "spade"
+            },
+            {
+                "rank": "K",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "7",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "diamond"
+            }
+        ],
+        "board": [
+            {
+                "rank": "5",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "spade"
+            },
+            {
+                "rank": "2",
+                "suit": "diamond"
+            }
+        ],
+        "prompt": "Pot was $30. Villain goes all-in for $10.",
+        "answer": "call",
+        "comment": "Hero has 6 outs (3 aces + 3 kings) for 24% equity on the flop. Getting 4:1 we need 20% equity. Call."
+    },
+    {
+        "hero": [
+            {
+                "rank": "4",
+                "suit": "spade"
+            },
+            {
+                "rank": "5",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "Q",
+                "suit": "heart"
+            },
+            {
+                "rank": "Q",
+                "suit": "diamond"
+            }
+        ],
+        "board": [
+            {
+                "rank": "6",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "heart"
+            },
+            {
+                "rank": "K",
+                "suit": "spade"
+            },
+            {
+                "rank": "A",
+                "suit": "diamond"
+            }
+        ],
+        "prompt": "Pot was $14. Villain goes all-in for $14.",
+        "answer": "fold",
+        "comment": "Hero has an open-ended straight draw with 8 outs for 16% equity on the turn. Getting 2:1 we need 33% equity. Fold."
+    },
+    {
+        "hero": [
+            {
+                "rank": "8",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "diamond"
+            },
+            {
+                "rank": "A",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "7",
+                "suit": "spade"
+            },
+            {
+                "rank": "T",
+                "suit": "spade"
+            },
+            {
+                "rank": "2",
+                "suit": "heart"
+            }
+        ],
+        "prompt": "Pot was $20. Villain goes all-in for $8.",
+        "answer": "call",
+        "comment": "Hero has an open-ended straight draw with 8 outs for 32% equity on the flop. Getting 3.5:1 we need about 22% equity. Call."
     }
 ]

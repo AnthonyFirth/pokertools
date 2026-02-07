@@ -96,5 +96,485 @@
         ],
         "answer": "32",
         "comment": "Hero has eight outs, and we're on the flop. 8 x 4 = 32."
+    },
+    {
+        "hero": [
+            {
+                "rank": "T",
+                "suit": "spade"
+            },
+            {
+                "rank": "9",
+                "suit": "spade"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "K",
+                "suit": "heart"
+            },
+            {
+                "rank": "Q",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "2",
+                "suit": "spade"
+            },
+            {
+                "rank": "6",
+                "suit": "spade"
+            },
+            {
+                "rank": "J",
+                "suit": "club"
+            }
+        ],
+        "answer": "36",
+        "comment": "Hero has 9 outs (flush draw), and we're on the flop. 9 x 4 = 36."
+    },
+    {
+        "hero": [
+            {
+                "rank": "9",
+                "suit": "heart"
+            },
+            {
+                "rank": "T",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "spade"
+            },
+            {
+                "rank": "K",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "K",
+                "suit": "spade"
+            },
+            {
+                "rank": "6",
+                "suit": "diamond"
+            },
+            {
+                "rank": "3",
+                "suit": "heart"
+            },
+            {
+                "rank": "7",
+                "suit": "club"
+            }
+        ],
+        "answer": "8",
+        "comment": "Hero has 4 outs (gutshot), and we're on the turn. 4 x 2 = 8."
+    },
+    {
+        "hero": [
+            {
+                "rank": "6",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "diamond"
+            },
+            {
+                "rank": "K",
+                "suit": "spade"
+            }
+        ],
+        "board": [
+            {
+                "rank": "5",
+                "suit": "spade"
+            },
+            {
+                "rank": "8",
+                "suit": "diamond"
+            },
+            {
+                "rank": "K",
+                "suit": "diamond"
+            },
+            {
+                "rank": "2",
+                "suit": "club"
+            }
+        ],
+        "answer": "16",
+        "comment": "Hero has 8 outs (open-ended straight draw), and we're on the turn. 8 x 2 = 16."
+    },
+    {
+        "hero": [
+            {
+                "rank": "A",
+                "suit": "heart"
+            },
+            {
+                "rank": "Q",
+                "suit": "spade"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "9",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "diamond"
+            }
+        ],
+        "board": [
+            {
+                "rank": "3",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "spade"
+            },
+            {
+                "rank": "T",
+                "suit": "diamond"
+            },
+            {
+                "rank": "5",
+                "suit": "heart"
+            }
+        ],
+        "answer": "12",
+        "comment": "Hero has 6 outs (3 aces + 3 queens), and we're on the turn. 6 x 2 = 12."
+    },
+    {
+        "hero": [
+            {
+                "rank": "K",
+                "suit": "diamond"
+            },
+            {
+                "rank": "4",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "Q",
+                "suit": "spade"
+            },
+            {
+                "rank": "Q",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "7",
+                "suit": "diamond"
+            },
+            {
+                "rank": "J",
+                "suit": "diamond"
+            },
+            {
+                "rank": "2",
+                "suit": "club"
+            },
+            {
+                "rank": "8",
+                "suit": "spade"
+            }
+        ],
+        "answer": "18",
+        "comment": "Hero has 9 outs (flush draw), and we're on the turn. 9 x 2 = 18."
+    },
+    {
+        "hero": [
+            {
+                "rank": "J",
+                "suit": "heart"
+            },
+            {
+                "rank": "8",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "club"
+            },
+            {
+                "rank": "K",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "4",
+                "suit": "heart"
+            },
+            {
+                "rank": "T",
+                "suit": "heart"
+            },
+            {
+                "rank": "K",
+                "suit": "diamond"
+            },
+            {
+                "rank": "3",
+                "suit": "spade"
+            }
+        ],
+        "answer": "18",
+        "comment": "Hero has 9 outs (flush draw), and we're on the turn. 9 x 2 = 18."
+    },
+    {
+        "hero": [
+            {
+                "rank": "J",
+                "suit": "club"
+            },
+            {
+                "rank": "T",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "spade"
+            },
+            {
+                "rank": "A",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "9",
+                "suit": "club"
+            },
+            {
+                "rank": "8",
+                "suit": "spade"
+            },
+            {
+                "rank": "2",
+                "suit": "diamond"
+            }
+        ],
+        "answer": "32",
+        "comment": "Hero has 8 outs (open-ended straight draw), and we're on the flop. 8 x 4 = 32."
+    },
+    {
+        "hero": [
+            {
+                "rank": "5",
+                "suit": "diamond"
+            },
+            {
+                "rank": "3",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "K",
+                "suit": "spade"
+            },
+            {
+                "rank": "K",
+                "suit": "heart"
+            }
+        ],
+        "board": [
+            {
+                "rank": "2",
+                "suit": "club"
+            },
+            {
+                "rank": "6",
+                "suit": "spade"
+            },
+            {
+                "rank": "J",
+                "suit": "diamond"
+            }
+        ],
+        "answer": "16",
+        "comment": "Hero has 4 outs (gutshot), and we're on the flop. 4 x 4 = 16."
+    },
+    {
+        "hero": [
+            {
+                "rank": "3",
+                "suit": "diamond"
+            },
+            {
+                "rank": "7",
+                "suit": "diamond"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "J",
+                "suit": "club"
+            },
+            {
+                "rank": "J",
+                "suit": "spade"
+            }
+        ],
+        "board": [
+            {
+                "rank": "A",
+                "suit": "diamond"
+            },
+            {
+                "rank": "9",
+                "suit": "diamond"
+            },
+            {
+                "rank": "K",
+                "suit": "club"
+            }
+        ],
+        "answer": "36",
+        "comment": "Hero has 9 outs (flush draw), and we're on the flop. 9 x 4 = 36."
+    },
+    {
+        "hero": [
+            {
+                "rank": "A",
+                "suit": "spade"
+            },
+            {
+                "rank": "K",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "7",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "diamond"
+            }
+        ],
+        "board": [
+            {
+                "rank": "5",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "spade"
+            },
+            {
+                "rank": "2",
+                "suit": "diamond"
+            }
+        ],
+        "answer": "24",
+        "comment": "Hero has 6 outs (3 aces + 3 kings), and we're on the flop. 6 x 4 = 24."
+    },
+    {
+        "hero": [
+            {
+                "rank": "4",
+                "suit": "spade"
+            },
+            {
+                "rank": "5",
+                "suit": "club"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "Q",
+                "suit": "heart"
+            },
+            {
+                "rank": "Q",
+                "suit": "diamond"
+            }
+        ],
+        "board": [
+            {
+                "rank": "6",
+                "suit": "club"
+            },
+            {
+                "rank": "7",
+                "suit": "heart"
+            },
+            {
+                "rank": "K",
+                "suit": "spade"
+            },
+            {
+                "rank": "A",
+                "suit": "diamond"
+            }
+        ],
+        "answer": "16",
+        "comment": "Hero has 8 outs (open-ended straight draw), and we're on the turn. 8 x 2 = 16."
+    },
+    {
+        "hero": [
+            {
+                "rank": "8",
+                "suit": "club"
+            },
+            {
+                "rank": "9",
+                "suit": "heart"
+            }
+        ],
+        "villain": [
+            {
+                "rank": "A",
+                "suit": "diamond"
+            },
+            {
+                "rank": "A",
+                "suit": "club"
+            }
+        ],
+        "board": [
+            {
+                "rank": "7",
+                "suit": "spade"
+            },
+            {
+                "rank": "T",
+                "suit": "spade"
+            },
+            {
+                "rank": "2",
+                "suit": "heart"
+            }
+        ],
+        "answer": "32",
+        "comment": "Hero has 8 outs (open-ended straight draw), and we're on the flop. 8 x 4 = 32."
     }
 ]
