@@ -223,3 +223,19 @@ body {
 .practice-button:hover {
     background: #5a5a5a;
 }
+
+#chart {
+    display: grid;
+    grid-template-columns: repeat(13, 30px);
+
+}
+
+#chart > div {
+    text-align: center;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#chart > .clicked {
+    background-color: red;
+}

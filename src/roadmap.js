@@ -1,6 +1,7 @@
 import loadOutsGame from "./outs.js"
 import loadEquityGame from "./equity.js"
 import loadPotoddsGame from "./potodds.js"
+import loadCharts from "./charts.js"
 
 import katex from "katex";
 import "katex/dist/katex.min.css";
@@ -41,6 +42,13 @@ export default function loadRoadmap(){
 
     const arrowPotOdds = document.createElement("div");
     arrowPotOdds.className = "arrow";
+
+    const charts = document.createElement("button");
+    charts.textContent = "Preflop charts";
+    charts.className = "roadmap-button";
+
+    const arrowCharts = document.createElement("div");
+    arrowCharts.className = "arrow";
 
 
     function openPanel(title, description, onPractice){
@@ -130,6 +138,16 @@ export default function loadRoadmap(){
         openPanel("Pot Odds", description, loadPotoddsGame); //fix this and actually create pot odds game...
     })
 
+    charts.addEventListener("click", (e) => {
+        e.stopPropagation();
+        let description = `
+        Preflop charts map out which hands to raise, call, or fold with before the flop,
+        based on your position at the table. Practice building your own charts from memory.
+        `
+
+        openPanel("Preflop charts", description, loadCharts);
+    })
+
     content.addEventListener("click", () => {
         if (panel.classList.contains("open")){
             panel.classList.remove("open");
@@ -144,6 +162,8 @@ export default function loadRoadmap(){
     roadmap.appendChild(equity);
     roadmap.appendChild(arrowPotOdds);
     roadmap.appendChild(potOdds);
+    roadmap.appendChild(arrowCharts);
+    roadmap.appendChild(charts);
     
 
     content.appendChild(roadmap);
